@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Cálculo del Número Mayor',
       theme: ThemeData(
         primarySwatch: Colors.green,
-        scaffoldBackgroundColor: const Color(0xFFF1F8E9), // Fondo pastel verde claro
+        scaffoldBackgroundColor: const Color(0xFFF1F8E9), 
       ),
       home: SplashScreen(),
       debugShowCheckedModeBanner: false,

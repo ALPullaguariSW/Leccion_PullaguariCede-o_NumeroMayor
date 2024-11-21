@@ -31,7 +31,7 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Cálculo del Número Mayor'),
-        backgroundColor: const Color(0xFFEF9A9A), // Pastel rojo claro
+        backgroundColor: const Color(0xFFEF9A9A), 
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -49,7 +49,7 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
               icon: const Icon(Icons.calculate),
               label: const Text('Calcular Mayor'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF80CBC4), // Pastel verde agua
+                backgroundColor: const Color(0xFF80CBC4), 
               ),
             ),
             const SizedBox(height: 20),
@@ -72,7 +72,7 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF004D40), // Verde oscuro
+                    color: Color(0xFF004D40), 
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -89,7 +89,7 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
         labelText: label,
-        prefixIcon: Icon(icon, color: const Color(0xFF004D40)), // Verde oscuro
+        prefixIcon: Icon(icon, color: const Color(0xFF004D40)), 
         filled: true,
         fillColor: Colors.white.withOpacity(0.8),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
