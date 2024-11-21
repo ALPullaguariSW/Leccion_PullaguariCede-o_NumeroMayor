@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../controllers/controlador_numero.dart';
 
 class NumberInputScreen extends StatefulWidget {
+  const NumberInputScreen({super.key});
+
   @override
   _NumberInputScreenState createState() => _NumberInputScreenState();
 }
@@ -28,7 +30,7 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cálculo del Número Mayor'),
+        title: const Text('Cálculo del Número Mayor'),
         backgroundColor: const Color(0xFFEF9A9A), // Pastel rojo claro
       ),
       body: Padding(
@@ -37,27 +39,27 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _buildTextField(_num1Controller, 'Número 1', Icons.looks_one),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             _buildTextField(_num2Controller, 'Número 2', Icons.looks_two),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             _buildTextField(_num3Controller, 'Número 3', Icons.looks_3),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton.icon(
               onPressed: _calculateMax,
-              icon: Icon(Icons.calculate),
-              label: Text('Calcular Mayor'),
+              icon: const Icon(Icons.calculate),
+              label: const Text('Calcular Mayor'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF80CBC4), // Pastel verde agua
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             if (_result.isNotEmpty)
               Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.8),
                   borderRadius: BorderRadius.circular(8),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black12,
                       blurRadius: 4,
@@ -67,10 +69,10 @@ class _NumberInputScreenState extends State<NumberInputScreen> {
                 ),
                 child: Text(
                   _result,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: const Color(0xFF004D40), // Verde oscuro
+                    color: Color(0xFF004D40), // Verde oscuro
                   ),
                   textAlign: TextAlign.center,
                 ),
